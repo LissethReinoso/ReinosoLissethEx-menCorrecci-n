@@ -5,10 +5,18 @@
  */
 package ec.edu.ups.idao;
 
+import ec.edu.ups.modelo.*;
+import java.util.List;
+
 /**
  *
- * @author Usuario
+ * @author Lisseth Reinoso
  */
-public interface IElectrodomesticoDAO {
+public interface IElectrodomesticoDAO{
     
+    public void crearTelevision (Television television);
+    public void crearLavadora (Lavadora lavadora);
+    
+    public List<Television> listarTelevision();
+    public List<Lavadora> listarLavadora();
 }
